@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/* css reset */
+html, body, ul, p, h1, h2, h3, form, input {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif; }
+
+body, html {
+  width: 100%;
+  height: 100%; }
+
+div {
+  position: relative; }
+
+a, a:hover {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-decoration: none; }
+
+ul {
+  font-size: 0; }
+
+li {
+  list-style: none; }
+
+img {
+  border: none;
+  vertical-align: top; }
+
+body {
+  -webkit-tap-highlight-color: transparent; }
+
+/*鐐瑰嚮鏃朵笉鍑虹幇榛戝潡*/
+/* css reset end */
+/* momo's default */
+.btn-box .btn, .inline {
+  display: inline-block;
+  *display: inline;
+  zoom: 1; }
+
+.btn-box {
+  font-size: 0;
+  position: absolute;
+  transition: all .1s ease;
+  -webkit-transition: all .1s ease;
+  pointer-events: all; }
+
+.btn {
+  text-align: center;
+  cursor: pointer; }
+
+.popup-box {
+  display: none;
+  z-index: 99; }
+
+/* .bg{display:none;position:fixed;width:100%;height:100%;background: #000;opacity:0.8;filter:Alpha(opacity=80);top:0;left:0;z-index:98;} */
+.bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 98; }
+
+.centertop {
+  -webkit-transform-origin: center top;
+  -ms-transform-origin: center top;
+      transform-origin: center top; }
+
+.centerbot {
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+      transform-origin: center bottom; }
+
+.action {
+  opacity: 0;
+  pointer-events: none; }
+  .action.active {
+    opacity: 1;
+    pointer-events: all; }
+
+/* momo's default end */
+body {
+  background: #fff; }
+
+h1, p, a {
+  color: #fff; }
+
+.s {
+  width: 640px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-color: #0d0251;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s; }
+
+.s0 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #0d0251;
+  display: none; }
+  .s0.active {
+    display: block; }
+  .s0 .main {
+    width: 1729px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none no-repeat center; }
+    .s0 .main .map {
+      width: 1729px;
+      height: 1030px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url("../img/bg.jpg") no-repeat center; }
+      .s0 .main .map.active {
+        -webkit-transition: opacity 1s;
+        transition: opacity 1s; }
+  .s0 .hint-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5) no-repeat center; }
+    .s0 .hint-box .hint {
+      width: 144px;
+      height: 26px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -72px;
+      margin-top: -13px;
+      background: url("../img/hint.png") no-repeat center; }
+
+/*# sourceMappingURL=scss.css.map */
